@@ -1,7 +1,20 @@
 plugins {
-    id 'application'
+    id 'java'
 }
 
-application {
-    mainClass = 'iris.Main'
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'io.vertx:vertx-core:4.2.5'
+}
+
+tasks.named('jar') {
+    manifest {
+        attributes(
+                'Implementation-Title': project.name,
+                'Main-Class': 'iris.Main'
+        )
+    }
 }
