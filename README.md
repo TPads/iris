@@ -1,6 +1,6 @@
 # iris
 iris is a java Vert.x service which calls french energy actors web services like SGE from Enedis (Distribution Network Operator) or Sinapse from Soregies (Provider)
-## Setup runtime with SDKMAN!
+## Setup runtime with SDKMAN! on UNIX-like platforms
 To quickly install the runtime used by iris, it's strongly recommended to use SDKMAN!
 It's a tool for managing parallel versions of multiple SDK on most Unix based systems.
 Follow these commands to install SDKMAN!
