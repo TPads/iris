@@ -4,15 +4,18 @@ import io.vertx.core.AbstractVerticle;
 import io.vertx.core.http.HttpServer;
 
 /**
- * HttpServer of app
+ * This is the iris Server
  */
 public class Server extends AbstractVerticle {
 
+    /**
+     * Instance of vert.x server
+     */
     private HttpServer server;
 
     /**
      * Start the HttpServer Verticle, then listen on given port
-     * @throws Exception
+     * @throws Exception when it's not started
      */
     @Override
     public void start() throws Exception {

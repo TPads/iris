@@ -30,6 +30,3 @@ build/
 
 # Gradle files and directories
 .gradle/
-gradle/
-gradlew
-gradlew.bat
