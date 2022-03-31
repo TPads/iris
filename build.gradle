@@ -8,13 +8,21 @@ repositories {
 
 dependencies {
     implementation 'io.vertx:vertx-core:4.2.5'
+    implementation 'io.vertx:vertx-web:4.2.5'
+    implementation 'com.jcabi:jcabi-manifests:1.1'
 }
 
 tasks.named('jar') {
+    duplicatesStrategy = 'include'
     manifest {
         attributes(
                 'Implementation-Title': project.name,
                 'Main-Class': 'iris.Main'
         )
+    }
+    from {
+        configurations.runtimeClasspath
+                .findAll { it.name.endsWith('jar') }
+                .collect { zipTree(it) }
     }
 }
