@@ -2,7 +2,7 @@
   "openapi": "3.0.0",
   "info": {
     "title": "iris",
-    "version": "current",
+    "version": "6.0.0",
     "description": "iris is a java Vert.x service which calls french energy actors web services like SGE from Enedis (Distribution Network Operator) or Sinapse from Soregies (Provider)",
     "contact": {
       "name": "Paul-Adrien Douteau-Sala",
@@ -15,7 +15,12 @@
     },
     "termsOfService": "https://github.com/TPads/iris/blob/main/LICENSE"
   },
-  "servers": [],
+  "servers": [
+    {
+      "url": "http://localhost:4000/iris/",
+      "description": "localhost"
+    }
+  ],
   "paths": {},
   "components": {
     "schemas": {},
