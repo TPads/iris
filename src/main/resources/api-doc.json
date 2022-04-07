@@ -1,0 +1,24 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "iris",
+    "version": "current",
+    "description": "iris is a java Vert.x service which calls french energy actors web services like SGE from Enedis (Distribution Network Operator) or Sinapse from Soregies (Provider)",
+    "contact": {
+      "name": "Paul-Adrien Douteau-Sala",
+      "url": "https://github.com/TPads",
+      "email": "pauladrien.douteau@gmail.com"
+    },
+    "license": {
+      "name": "MIT License",
+      "url": "https://github.com/TPads/iris/blob/main/LICENSE"
+    },
+    "termsOfService": "https://github.com/TPads/iris/blob/main/LICENSE"
+  },
+  "servers": [],
+  "paths": {},
+  "components": {
+    "schemas": {},
+    "securitySchemes": {}
+  }
+}

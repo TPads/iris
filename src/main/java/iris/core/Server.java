@@ -40,6 +40,10 @@ public class Server extends AbstractVerticle {
         this.httpServer.requestHandler(mainRouter).listen(4000);
     }
 
+    /**
+     * Instantiate mainRouter with handler
+     * @return
+     */
     public Router mainRouting() {
         Router router = Router.router(Main.vertx);
         router.route(HttpMethod.GET, "/doc").handler(context -> {
