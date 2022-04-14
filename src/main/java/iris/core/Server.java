@@ -14,7 +14,7 @@ import iris.util.Recorder;
 public class Server extends AbstractVerticle {
 
     /**
-     *  Recorder instance for Server
+     * Recorder instance for Server
      */
     final private Recorder recorder = new Recorder(this.getClass().getSimpleName());
 
@@ -42,7 +42,8 @@ public class Server extends AbstractVerticle {
 
     /**
      * Instantiate mainRouter with handler
-     * @return
+     *
+     * @return the created router
      */
     public Router mainRouting() {
         Router router = Router.router(Main.vertx);
